@@ -1,0 +1,194 @@
+@font-face {
+    font-family: CHUP;
+    src: url('JWGrotesk-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CHUP';
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.container{
+    max-width: 1536px;
+    width: 90%;
+    margin: 0 auto;
+}
+.nav-container{
+    position: fixed;
+    z-index: 1000;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 150px;
+}
+.logo a{
+    font-size: 70px;
+    color: black;
+    text-transform: lowercase;
+    font-weight: 200;
+    font-family: cursive;
+    transition: .5s;
+    position: relative;
+}
+.logo a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: rgba(0, 0, 0, 0.7);
+    transition: .5s ease;
+}
+.logo a:hover{
+    opacity: 0.4;
+}
+.logo a:hover::after{
+    width: 100%;
+}
+.nav-list a{
+    color: black;
+    font-size: 25px;
+    margin-right: 50px;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 11px 33px;
+    transition: .5s ease   
+}
+.nav-list a:hover{
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+.main{
+    font-size: 60px;
+    min-height: 100px;
+    width: 100%;
+}
+.main h3{
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 330px 110px;
+}
+.img-cont {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+    gap: 50px;
+}
+.img-cont-only{
+    overflow: hidden;
+}
+.img-cont-only img{
+    width: 100%;
+    transition: all ease .5s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.img-cont-only img:hover{
+    scale: 1.2;
+    filter: grayscale(0%);
+}
+.img-cont-in h5{
+    font-size: 18px;
+    color: #141414;
+    font-weight: 300;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.img-cont-in p{
+    font-size: 28px;
+    font-weight: 300;
+    color: #141414;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.all-works{
+    justify-content: center;
+}
+.all-works a{
+    position: relative;
+} 
+.all-works a h5{
+    font-size: 30px;
+    font-weight: 100;
+}
+.all-works a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 1px;
+    width: 100%;
+    background: #222;
+    transition: .3s ease;
+}
+.all-works a:hover::after{
+    width: 0;
+}
+.footer{
+    margin-top: 12rem !important;
+}
+.left{
+    width: 40%;
+}
+.left .text-cont{
+    margin-bottom: 40px;
+}
+.left .text-cont h3{
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.left .underline_wala h3{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.left .underline_wala h3::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 1px;
+    width: 100%;
+    background: #222;
+    transition: .3s ease;
+}
+.left .underline_wala h3:hover::before{
+    width: 0;
+}
+
+
+.right{
+    width: 50%;
+    justify-content: space-evenly;
+}
+.right a i{
+    font-size: 50px;
+    color: #000;
+    opacity: 0.4;
+    transition: .3s ease;
+}
+.right a i:hover{
+    opacity: 1;
+}
